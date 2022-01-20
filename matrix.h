@@ -9,10 +9,9 @@
 #include <iomanip>
 #include <algorithm>
 
-
-
 class Matrix {
     public:
+        Matrix() = delete;
         Matrix(std::vector<std::vector<float> > mat);
         ~Matrix() {}
 
@@ -24,7 +23,5 @@ class Matrix {
 
     private:
         std::vector<std::vector<float> > Mat;
-        Matrix() {};
-
 };
 #endif
